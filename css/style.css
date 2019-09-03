@@ -77,8 +77,9 @@ header{
     padding-top:50px;
     padding-bottom: 30px;
 }
-#work .row .col-lg-4 a:hover{
-    transition: all 1s;
+
+#work  a:hover{
+    transition: all 0.5s;
     transform: scale(1.1);
 }
 
