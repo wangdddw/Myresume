@@ -77,11 +77,41 @@ header{
     padding-top:50px;
     padding-bottom: 30px;
 }
-
-#work  a:hover{
-    transition: all 0.5s;
-    transform: scale(1.1);
+#work .workImg{
+    position: relative;
 }
+
+#work .workImg img{
+    transition: all 0.5s;
+}
+
+#work  .workImg:hover img{
+    filter: grayscale(1);
+}
+#work .workImg .workIntro{
+    display: none;
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    text-align: center;
+    z-index: -10;
+    transition: all 0.5s;
+}
+#work .workImg:hover .workIntro{
+    display: block;
+    bottom: 45%;
+    z-index: 10;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bolder;
+    transition: all 0.5s;
+    text-shadow: 0.1em 0.1em 0.2em #000000;
+}
+/*#work a.workImg:hover .imgHover{
+    display: block;
+    height: 100%;
+    background: #000;
+}*/
 
 #contact{
     padding-top: 50px;
@@ -112,4 +142,6 @@ header{
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
