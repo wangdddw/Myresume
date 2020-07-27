@@ -4,7 +4,7 @@ $(document).ready(function(){
         e.preventDefault();
         var target = $(this).attr('href');
         var targetPos = $(target).offset().top;
-        $('html,body').animate({scrollTop:targetPos},1000);
+        // $('html,body').animate({scrollTop:targetPos},1000);
     });
 
     $(window).scroll(function(){
