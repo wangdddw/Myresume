@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    
+    AOS.init({
+        duration:500,
+        easing: 'ease',
+    });
     $('.scrollTop').click(function(e){
         e.preventDefault();
         var target = $(this).attr('href');
@@ -24,12 +27,7 @@ $(document).ready(function(){
                 $(this).removeClass('active');
             }
         });
-        //animated
-        $('.animated').each(function () {
-            var thisPos = $(this).offset().top;
-            if((windowHeight + scrollPos) >= thisPos){
-                $(this).addClass('fadeIn');
-            };
-        });
+        
     });
 });
+
